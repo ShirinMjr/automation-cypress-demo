@@ -3,7 +3,7 @@ describe("visit FieldWire homepage", () => {
     cy.visit("https://www.fieldwire.com/");
   });
 
-  it("User can visit Homepage successfully ", () => {
+  it.only("User can visit Homepage successfully ", () => {
     cy.get(".title").should(
       "contains.text",
       "Jobsite Management For Construction Teams"
@@ -12,10 +12,20 @@ describe("visit FieldWire homepage", () => {
       "contains.text",
       "Fieldwire powers over 1,000,000 jobsites worldwide"
     );
-    cy.get(".nav-item.sign-up").then(()=>{
-        
-    })
+    cy.get("li.nav-item.sign-up").click();
 
-    cy.get(".terms.ng-scope")
+    cy.get(".terms.ng-scope").should(
+      "have.text",
+      "Create your free account to get started"
+    );
+
+    cy.get("button[type=submit]").should("have.attr", "aria-disabled", "true");
+    cy.get("input#firstNameInput").type("Bill");
+    cy.get("input#lastNameInput").type("Smart");
+    cy.get("input#emailInput").type("tbillsmart@gmail.com");
+    cy.get("input#passwordInput").type("strongpass@12");
+    cy.get("input#explicitAgreement").click();
+    cy.get("button[type=submit]").should("have.attr", "aria-disabled", "false");
+    cy.get("button[type=submit]").click();
   });
 });
