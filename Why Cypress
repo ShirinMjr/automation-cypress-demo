@@ -19,4 +19,3 @@ it has native access to every single object. Your test code can access all the s
 •	Get synchronous notifications whenever your application transitions to a new page or when it begins to unload.
 •	Control time by moving forward or backward so that timers or polls automatically fire without having to wait for the required time in your tests.
 •	Add your own event listeners to respond to your application. You could update your application code to behave differently when under tests in Cypress. You can control WebSocket messages from within Cypress, conditionally load 3rd party scripts, or call functions directly on your application.
-
