@@ -2,7 +2,7 @@
 
 Selenium runs outside of the browser, but Cypress is executed in the same run
 
-Cypress operates at the network layer by reading and altering web traffic on the fly.
+Cypress operates at the network layer by reading and altering web traffic on the fly. (Sub and spy)
 Respond to your application's events in real time, while at the same time work outside of the browser for tasks that require a higher privilege
 Cypress can deliver more consistent results than any other testing tool.
 taking screenshots, recording videos,
