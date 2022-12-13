@@ -1,4 +1,4 @@
-describe("suit1", () => {
+describe("suite 1", () => {
   //There are two ways of writing tests function()=>{} and ()=>{}
   it("1 - Google Search", function () {
     cy.visit("https://google.com");
