@@ -3,7 +3,7 @@ Start here:
 Install node:
 $ npm init -> Creates package.Json fole
 
-# Install node
+* Install node
 $ npm install
 
 Install Cypress
