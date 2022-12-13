@@ -1,12 +1,15 @@
 Start here:
 
-Install node:
-$ npm init -> Creates package.Json fole
+*Checking node version
+$ npm -v
+*Checking nmp (node package manager) version
+$ npm -v
+*Create node project
+$ npm init  //Creates package.Json fole
 
-* Install node
-$ npm install
 
-Install Cypress
+
+*Install Cypress
 npm install cypress 
 
 # Get Cypress version
