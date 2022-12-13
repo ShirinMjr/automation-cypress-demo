@@ -1,8 +1,8 @@
 {
-  "name": "cypress-fieldwire",
+  "name": "cypress-sample-code",
   "version": "1.0.0",
   "description": "test practice automate website",
-  "main": "cypress.config.js",
+  "main": "index.js",
   "dependencies": {},
   "devDependencies": {
     "cypress": "^11.2.0"
@@ -12,12 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShirinMjr/cypress-fieldwire.git"
+    "url": "git+https://github.com/ShirinMjr/cypress-sample-code.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ShirinMjr/cypress-fieldwire/issues"
+    "url": "https://github.com/ShirinMjr/cypress-sample-code/issues"
   },
-  "homepage": "https://github.com/ShirinMjr/cypress-fieldwire#readme"
+  "homepage": "https://github.com/ShirinMjr/cypress-sample-code#readme",
+  "keywords": []
 }
