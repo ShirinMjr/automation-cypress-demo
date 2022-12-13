@@ -15,3 +15,9 @@ describe("suite 1", () => {
     cy.title().should("include", "End to End Testing Framework");
   });
 });
+/**
+ * To run this file from terminal
+ * => cypres run session1
+ * If you want to run with headed browser
+ * => cypress run --headed session1
+ */
