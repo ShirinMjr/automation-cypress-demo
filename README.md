@@ -20,3 +20,4 @@
 
 * to get the latest version of cypress
 `npm install -D cypress@latest`
+  * `-D` updates the lates dependencies
