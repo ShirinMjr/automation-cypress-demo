@@ -56,4 +56,21 @@ describe("Suite 2 ", () => {
       cy.get("div#mw-content-text");
     });
   });
+
+  //XPATH ==>> (//td)[i] or //td[last()]
+  it("7- Index", () => {
+    cy.visit("https://www.play2.automationcamp.ir/index.html");
+    cy.get("td").eq(5);
+    cy.get("td").first();
+    cy.get("td").last();
+  });
+
+  //XPATH ===>> //td[@id='td_id']   or //td(not(@id='td_id'))
+  it("8- Filter", () => {
+    cy.visit("https://www.play2.automationcamp.ir/index.html");
+    //.filter
+    cy.get("td").filter("#td_id");
+    //.not
+    cy.get("td").not("#td_id");
+  });
 });
