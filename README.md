@@ -17,3 +17,6 @@
 
 * Open Cypress
 `npx cypress open`
+
+* to get the latest version of cypress
+`npm install -D cypress@latest`
