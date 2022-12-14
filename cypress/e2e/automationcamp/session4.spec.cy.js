@@ -93,6 +93,14 @@ it("5- Random number: ⛔ NOT WORKING ", function () {
     cy.visit("random_number.html");
     reloadAndCheck();
   });
-
-  
+  it("6- Use for debugging", function () {
+    cy.visit("https://www.play2.automationcamp.ir/index.html");
+    cy.get("#fname")
+      .type("Cypress")
+      .then((el) => {
+        debugger;
+        let input_value = el.val();
+        expect(input_value).to.eq("Cypres"); // Typo in 'Cypress'
+      });
+  });
 });
