@@ -37,11 +37,39 @@ describe("Session4", function () {
       });
   });
 
+  /**
+   * To get an api .fetch(API)
+   */
   it.only("4- Api assertion using then()", function () {
     fetch("https://api.spacexdata.com/v3/missions")
       .then((resp) => resp.json())
       .then((data) => {
         console.log(data);
       });
+  });
+});
+
+it("5- Random number: ⛔ NOT WORKING ", function () {
+  cy.visit("random_number.html").then(() => {
+    let found7 = false;
+    while (!found7) {
+      // this schedules an infinite number
+      // of "cy.get..." commands, eventually crashing
+      // before any of them have a chance to run
+      // and set found7 to true
+      cy.get("#result")
+        .should("not.be.empty")
+        .invoke("text")
+        .then(parseInt)
+        .then((number) => {
+          if (number === 7) {
+            found7 = true;
+            cy.log("Number **7** Found");
+          } else {
+            cy.wait(500, { log: false });
+            cy.reload();
+          }
+        });
+    }
   });
 });
