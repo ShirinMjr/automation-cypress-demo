@@ -73,4 +73,22 @@ describe("Suite 2 ", () => {
     //.not
     cy.get("td").not("#td_id");
   });
+
+  it("9- Traversal", () => {
+    cy.visit("https://www.play2.automationcamp.ir/index.html");
+    //closes parent closes to the element...it looks outside
+    cy.get("#fname").closest("div").should("have.class", "main");
+    //next sibling after the selected element
+    cy.get("[value='td1_value']").next();
+    //all siblings after the selected element
+    cy.get("[value='td1_value']").nextAll();
+    //all the simlings after selected element Until a spesific element
+    cy.get("[value='td1_value']").nextUntil("[value='td4_value']");
+    //fist previous element before the selected element
+    cy.get("[value='td5_value']").prev();
+    //All elements before selected element
+    cy.get("[value='td5_value']").prevAll();
+    //All elements previous the selected elment until a spesific element
+    cy.get("[value='td5_value']").prevUntil("[value='td1_value']");
+  });
 });
