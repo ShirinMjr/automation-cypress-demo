@@ -11,7 +11,7 @@
 
 * Install Cypress
 `npm install cypress --save-dev`
- * ` --save-dev` installs dependencies
+  * ` --save-dev` installs dependencies
 
 * Get Cypress version
 `npx cypress -v`
