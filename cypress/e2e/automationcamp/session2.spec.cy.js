@@ -35,3 +35,4 @@ describe("Suite 2 ", () => {
       .should("have.length", 3);
   });
 });
+>>>>>>> 2d66a8c77b6fe64b31fa089567aad18c34ae4b2c
