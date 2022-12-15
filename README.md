@@ -20,5 +20,10 @@
 `npx cypress open`
 
 * to get the latest version of cypress
-`npm install -D cypress@latest`
+  * `npm install -D cypress@latest`
   * `-D` updates the lates dependencies
+  
+* Cypress Real Events plugin 
+https://github.com/dmtrKovalenko/cypress-real-events
+  * `⚡ npm install cypress-real-events`
+  * Import it in project available for all the specs `import "cypress-real-events"`
