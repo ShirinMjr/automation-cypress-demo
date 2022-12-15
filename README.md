@@ -26,4 +26,5 @@
 * Cypress Real Events plugin 
 https://github.com/dmtrKovalenko/cypress-real-events
   * `⚡ npm install cypress-real-events`
-  * Import it in project available for all the specs `import "cypress-real-events"`
+  * Import it in project available for all the specs. Add this to `e2e.js` under support
+    * `import "cypress-real-events";`
